@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+body{
+    background-color: rgb(210, 167, 250);
+}
+
+header{
+    text-align: center;
+    background-color: blueviolet;
+    color: bisque;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid bisque;
+}
+
+header h1{
+    margin-bottom: 0.5rem;
+}
+
+nav ul li{
+display: inline;
+margin-right: 2em;
+}
+
+main img{
+    width: 50%;
+    height: auto; 
+}
+
+button{
+    margin: 1em auto;
+    padding: 0.4rem;
+    background-color: transparent;
+    border-radius: 2em;
+    border: 2px solid yellow;
+    color: bisque;
+    font-weight: bold;
+}
+
+footer{
+    background-color: blueviolet;
+    color: bisque;
+    text-align: center;
+    font-size: 0.8rem;
+}
+p{
+    color:antiquewhite;
+    font-weight: bold;
+}
+
+h2,
+h3{
+    color: yellow;
+    font-weight: bold;
+}
+
+img{
+    border: 5px solid yellow; 
+}
+
+.itens h2{
+    margin-bottom: 1rem;
+    border-bottom: 2px solid yellow;
+}
+
+@media screen and (max-width: 640px) {
+    header{
+        text-align: center;
+        background-color: blueviolet;
+        color: bisque;
+        margin-bottom: 2rem;
+        border-bottom: 5px solid bisque;
+    }
+
+    header h1{
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li{
+    display: inline;
+    margin-right: 2em;
+    }
+
+    section{
+        text-align: center;
+    }
+
+    img{
+        width: 90%;
+        height: auto;
+    }
+
+    .itens img{
+        width: 70%;
+    }
+    .sobre h2,
+    .sobre p{
+        margin: 10px auto;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .sobre a {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .sobre{
+        padding: 1em;
+    }
+
+    .sobre img{
+        width: 70%;
+    }
+
+    .sobre h2,
+    .sobre p{
+        margin-bottom: 1rem;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .itens h2{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudo{
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px; 
+    } 
+
+    header {
+        padding: 0 32px; 
+    }
+    .cabecario{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 8px 0; 
+    }
+
+    .sobre img{
+        width: 80%;
+    }
+
+    .sobre {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .container{
+    display: flex;
+    }
+
+    .container article{
+        margin-right: 3em;
+    }
+
+    footer{
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .texto {
+        flex: 1; 
+    }
+    
+    .texto h2 {
+        margin-top: 0;
+    }
+    
+    .texto p {
+        margin-bottom: 0;
+    }
+}
